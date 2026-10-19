@@ -83,7 +83,7 @@
 
 ```bash
 cd wp-content/plugins
-git clone https://github.com/Hoseinkhalaj1/OmoReviews.git biz-reviews
+git clone https://github.com/Hoseinkhalaj1/omoreviews.git biz-reviews
 ```
 
 سپس افزونه را از پیشخوان فعال کنید. با فعال‌سازی، جدول‌های `{prefix}bizrev_reviews` و `{prefix}bizrev_votes` ساخته می‌شوند.
