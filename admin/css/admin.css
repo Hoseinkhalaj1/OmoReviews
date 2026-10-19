@@ -1,0 +1,57 @@
+/* BizReviews — استایل ادمین */
+.bizrev-admin{max-width:1280px;}
+
+/* ---------- تب‌ها ---------- */
+.bizrev-tabs-nav{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;border-bottom:1px solid #c3c4c7;}
+.bizrev-tab-btn{
+	background:#f0f0f1;border:1px solid #c3c4c7;border-bottom:none;
+	border-radius:6px 6px 0 0;padding:8px 18px;cursor:pointer;
+	font:inherit;font-size:14px;color:#50575e;margin-bottom:-1px;
+}
+.bizrev-tab-btn:hover{background:#fff;color:#1d2327;}
+.bizrev-tab-btn.active{background:#fff;color:#2271b1;font-weight:600;border-bottom:1px solid #fff;}
+.bizrev-tab-panel{display:none;}
+.bizrev-tab-panel.active{display:block;}
+
+.bizrev-sec{margin-top:30px;padding-bottom:8px;border-bottom:2px solid #2271b1;font-size:16px;}
+.bizrev-adm-pc{font-size:12px;color:#16a34a;margin-top:4px;}
+.bizrev-adm-pc.bad{color:#dc2626;}
+.bizrev-adm-replies{margin:10px 0;display:flex;flex-direction:column;gap:6px;}
+.bizrev-adm-reply{background:#f6f7f7;border-right:3px solid #2271b1;border-radius:6px;padding:8px 10px;}
+.bizrev-adm-reply.is-pending{border-right-color:#dba617;background:#fcf9e8;}
+.bizrev-adm-reply-meta{font-size:12px;}
+.bizrev-adm-owner{background:#2271b1;color:#fff;font-size:10px;padding:1px 6px;border-radius:99px;margin-right:4px;}
+.bizrev-adm-pending-tag{color:#dba617;font-size:11px;}
+.bizrev-adm-reply-text{font-size:13px;margin:4px 0;color:#1d2327;}
+.bizrev-adm-reply-actions{display:flex;gap:6px;}
+.bizrev-danger{color:#b32d2e!important;border-color:#b32d2e!important;}
+.bizrev-adm-verified{color:#16a34a;font-weight:700;margin-right:4px;}
+.bizrev-verify-btn{color:#16a34a!important;border-color:#16a34a!important;}
+.bizrev-reply-box{margin-top:8px;}
+.bizrev-reply-box summary{cursor:pointer;color:#2271b1;font-size:12px;}
+
+/* چیدمان تنظیمات با پیش‌نمایش */
+.bizrev-settings-layout{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:start;}
+.bizrev-preview-pane{position:sticky;top:50px;}
+.bizrev-preview-frame{background:#fff;border:1px solid #dcdcde;border-radius:12px;padding:18px;max-height:80vh;overflow:auto;}
+.bizrev-crit-edit{display:flex;gap:8px;margin-bottom:8px;align-items:center;}
+.bizrev-crit-edit input[type=text]{flex:1;}
+.bizrev-radius-val,.bizrev-fontsize-val{font-weight:700;}
+
+/* گرید نوع‌های محتوا */
+.bizrev-pt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px 18px;max-width:760px;}
+.bizrev-pt-item{display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid #e0e0e6;border-radius:8px;background:#fff;}
+.bizrev-pt-item code{font-size:11px;color:#888;}
+
+/* جدول‌های متن و استایل */
+.bizrev-text-group-title{margin:18px 0 4px;font-size:14px;color:#1d2327;border-right:3px solid #2271b1;padding-right:8px;}
+.bizrev-text-table th,.bizrev-style-table th{width:240px;font-weight:500;padding:8px 10px 8px 0;}
+.bizrev-text-table td,.bizrev-style-table td{padding:6px 0;}
+.bizrev-text-table tr,.bizrev-style-table tr{border-bottom:1px solid #f0f0f1;}
+.bizrev-px-val{display:inline-block;min-width:42px;font-weight:700;margin-right:8px;}
+.bizrev-style-px{vertical-align:middle;width:200px;}
+
+@media(max-width:1100px){
+	.bizrev-settings-layout{grid-template-columns:1fr;}
+	.bizrev-preview-pane{position:static;}
+}
